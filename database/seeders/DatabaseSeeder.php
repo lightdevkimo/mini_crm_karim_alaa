@@ -30,6 +30,7 @@ class DatabaseSeeder extends Seeder
             'password'=> bcrypt('employer')
         ]);
 
+
         $admin->assignRole($role1);
         $employer->assignRole($role2);
 
