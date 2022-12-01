@@ -34,5 +34,6 @@ class DatabaseSeeder extends Seeder
 
         $employer->assignRole($role2);
 
+
     }
 }
