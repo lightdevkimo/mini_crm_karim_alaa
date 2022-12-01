@@ -14,17 +14,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*
- * Here I Used Spatie Laravel permission To Add Roles And Permissions
- *
- * /
-/*
-use Spatie\Permission\Models\Role;
-Route::get('/role', function () {
-    Role::create(['name' => 'admin']);
-    Role::create(['name' => 'employer']);
-});
-*/
+
 
 Route::resource('users', UserController::class)->only(['index','store','create']);
 
